@@ -1,6 +1,9 @@
 package net.vrgsoft.videcrop.ffmpeg;
 
 import android.content.Context;
+import android.os.Build;
+
+import androidx.core.graphics.drawable.DrawableCompat;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -11,9 +14,12 @@ import java.io.OutputStream;
 
 class FileUtils {
     private static final String FFMPEG_FILE_NAME = "ffmpeg";
-
+    private static  File folder;
     static File getFFmpeg(Context context) {
-        File folder = context.getFilesDir();
+        folder = context.getFilesDir();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            folder = new File(context.getApplicationInfo().nativeLibraryDir);
+        }
         return new File(folder, FFMPEG_FILE_NAME);
     }
 

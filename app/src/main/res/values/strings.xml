@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VideoCrop</string>
+    <string name="snapbytes">Video</string>
+    <string name="normal">Advert</string>
 </resources>
