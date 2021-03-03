@@ -5,6 +5,6 @@
     <string name="square">Square</string>
     <string name="portrait">Portrait</string>
     <string name="landscape">Landscape</string>
-    <string name="_4_3">4:3</string>
+    <string name="_4_3">9:20</string>
     <string name="_16_9">9:16</string>
 </resources>
