@@ -245,7 +245,7 @@ public class VideoCropActivity extends AppCompatActivity implements VideoPlayer.
             @Override
             public void onClick(View v) {
                 mCropVideoView.setFixedAspectRatio(true);
-                mCropVideoView.setAspectRatio(16, 9);
+                mCropVideoView.setAspectRatio(9, 16);
                 handleMenuVisibility();
             }
         });
